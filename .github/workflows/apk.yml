@@ -26,8 +26,7 @@ jobs:
           rm -rf tmp_proj
 
       - name: İzinleri ekle
-        working-directory: omer_ai_mobil
-        run: python3 ayarla_android.py
+        run: python3 omer_ai_mobil/ayarla_android.py
 
       - run: flutter pub get
       - run: flutter build apk --release
